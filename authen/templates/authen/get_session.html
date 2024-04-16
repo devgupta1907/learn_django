@@ -1,0 +1,10 @@
+
+
+{% for a in session.items %}
+    <p>{{ a }}</p>
+{% endfor %}
+
+<p> {{ session.get_session_cookie_age }} </p>
+<p> {{ session.get_expiry_age }} </p>
+<p> {{ session.get_expiry_date }} </p>
+<p> {{ session.get_expire_at_browser_close }} </p>
